@@ -1,0 +1,225 @@
+:root {
+    --primary-color: #ffd700;
+    --text-color: #ffffff;
+    --background-color: #1a1a1a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+header {
+    padding: 2rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem 2rem;
+    min-height: 80vh;
+}
+
+.hero-content {
+    flex: 1;
+    padding-right: 2rem;
+}
+
+h1 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+h2 {
+    font-size: 3rem;
+    margin: 1rem 0;
+}
+
+.cta-buttons {
+    margin-top: 2rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    margin-right: 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.primary {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+}
+
+.secondary {
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+.hero-image img {
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+.skills {
+    padding: 4rem 2rem;
+}
+
+.skills h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.skill-item {
+    margin-bottom: 1.5rem;
+}
+
+.skill-name {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.skill-bar {
+    height: 10px;
+    background-color: #333;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.skill-level {
+    height: 100%;
+    background-color: var(--primary-color);
+    transition: width 1s ease;
+}
+
+.skill-percentage {
+    display: block;
+    text-align: right;
+    font-size: 0.9rem;
+    margin-top: 0.25rem;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content {
+        padding-right: 0;
+        margin-bottom: 2rem;
+    }
+
+    .hero-image img {
+        max-width: 100%;
+    }
+}
+
+/* Add these styles to your existing CSS */
+
+.about-me {
+    padding: 6rem 2rem;
+    background-color: rgba(255, 215, 0, 0.05);
+}
+
+.about-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-content h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: var(--primary-color);
+}
+
+.about-text {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.highlight {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+}
+
+.about-text p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.quick-stats {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3rem;
+    padding: 2rem 0;
+    border-top: 1px solid rgba(255, 215, 0, 0.2);
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-number {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    font-size: 1rem;
+    color: #888;
+}
+
+@media (max-width: 768px) {
+    .quick-stats {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+    .about-me {
+        padding: 4rem 1rem;
+    }
+}
+
+.resume {
+    background-color: transparent;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+.resume:hover {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+}
